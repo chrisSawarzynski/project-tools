@@ -16,7 +16,7 @@ class Project {
         commands = (new CreateProject()).register(commands);
         return commands;
     }
-    public static void main(String[] argsa) {
+    public static void main(String[] args) {
         List<String> argsList = Arrays.asList(args);
         ListIterator<String> argsIterator = argsList.listIterator();
         List<Command> commands = registerCommands();
