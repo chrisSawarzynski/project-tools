@@ -14,6 +14,6 @@ public class CreateProject implements Command {
   };
 
   public boolean check(String arg) {
-    return arg=="create";
+    return arg.equals("create");
   };
 }

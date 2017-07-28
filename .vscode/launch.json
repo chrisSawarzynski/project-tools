@@ -11,7 +11,9 @@
       "startupClass": "${fileBasenameNoExtension}",
       "classpath": [
         ".",
-        "${fileDirname}",
+        "${fileDirname}"
+      ],
+      "args": [
         "create"
       ]
     },
