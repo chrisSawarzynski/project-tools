@@ -26,11 +26,16 @@ class Project {
             arg = argsIterator.next();
 
             for (Command cmd : commands) {
-                if (cmd.check(arg) == true) {
+                if (cmd.check(arg) == false)
+                    continue;
+                try {
                     argsIterator = cmd.run(argsIterator);
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                    return;
                 }
             }
-
         }
+
     }
 }

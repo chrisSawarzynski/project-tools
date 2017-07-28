@@ -12,9 +12,6 @@
       "classpath": [
         ".",
         "${fileDirname}"
-      ],
-      "args": [
-        "create"
       ]
     },
     {
@@ -29,7 +26,11 @@
         ".",
         "${fileDirname}"
       ],
-      "externalConsole": true
+      "args": [
+        "create",
+        "php"
+      ],
+      "externalConsole": false
     }
   ]
 }
